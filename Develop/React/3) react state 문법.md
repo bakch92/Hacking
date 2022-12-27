@@ -20,6 +20,6 @@
 
 4. 단, array, Object 형식은 해당 형식에 맞게 넣어줘야 함. (아래 예시는 Array State 수정)
 
-        let copy = [...글제목];
+        let copy = [...글제목]; ///...을 이용하여 글제목의 array를 벗긴 후 Array로 감싼다(deep copy)
         글제목[0] = '수정';
         글제목변경(글제목);
