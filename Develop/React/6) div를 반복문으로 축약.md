@@ -4,6 +4,7 @@
 i는 index 값
 
     function App (){
+    let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '파이썬독학']);
     return (
         <div>
         (생략)
