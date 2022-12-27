@@ -7,21 +7,21 @@
 1. 자식 컴포넌트 사용하는 곳에 가서 <자식컴포넌트 작명={state이름}/>
 2. 자식 컴포넌트 만드는 곳에 가서 props 파라미터 등록 후 props.작명 사용
 
-    function App (){
-        let [글제목, 글제목변경] = useState(['남자코트 추천', '강남 우동맛집', '파이썬독학']);
-        return (
-            <div>
-                <Modal 글제목={글제목}></Modal>
-            </div>
-        )
-    }
+        function App (){
+            let [글제목, 글제목변경] = useState(['남자코트 추천', '강남 우동맛집', '파이썬독학']);
+            return (
+                <div>
+                    <Modal 글제목={글제목}></Modal>
+                </div>
+            )
+        }
 
-    function Modal(props){
-        return (
-            <div className="modal">
-                <h4>{ props.글제목[0] }</h4>
-                <p>날짜</p>
-                <p>상세내용</p>
-            </div>
-        )
-    }
+        function Modal(props){
+            return (
+                <div className="modal">
+                    <h4>{ props.글제목[0] }</h4>
+                    <p>날짜</p>
+                    <p>상세내용</p>
+                </div>
+            )
+        }
