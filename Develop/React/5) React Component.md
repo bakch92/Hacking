@@ -8,24 +8,23 @@
 2. 함수 안에 return( HTML 코드) 담음
 3. 메인 HTML 코드 원하는 곳에 <함수명/> 사용하여 축약한 HTML 삽입
 
-
-    function App (){
-        return (
-        <div>
-          (생략)
-          <Modal></Modal>
-        </div>
-        )
-    }
-    function Modal(){
-        return (
-          <div className="modal">
-          <h4>제목</h4>
-          <p>날짜</p>
-          <p>상세내용</p>
-        </div>
-        )
-    }
+        function App (){
+            return (
+            <div>
+            (생략)
+            <Modal></Modal>
+            </div>
+            )
+        }
+        function Modal(){
+            return (
+            <div className="modal">
+            <h4>제목</h4>
+            <p>날짜</p>
+            <p>상세내용</p>
+            </div>
+            )
+        }
 
 
 ## Component 만들때 주의점
