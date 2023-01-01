@@ -1,6 +1,6 @@
-# 이전에 사용하던 class 컴포넌트 형식의 리액트 문법
+# 이전에 사용하던 class Component 형식의 리액트 문법
 
-## 이전에는 컴포넌트를 만들기 위해서 class 문법을 사용
+## 이전에는 Component를 만들기 위해서 class 문법을 사용
 
 ## 사용법
 1. this.state라는 변수를 만들고 안에다가 Object 형식으로 state 나열
@@ -26,7 +26,7 @@
 
         }
 
-## class 컴포넌트에서 props 전송
+## class Component에서 props 전송
 1. constructor, super에 props 파라미터 등록
 2. 'this.props.props이름'으로 사용
 
