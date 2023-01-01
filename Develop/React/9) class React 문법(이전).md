@@ -1,0 +1,48 @@
+# 이전에 사용하던 class 컴포넌트 형식의 리액트 문법
+
+## 이전에는 컴포넌트를 만들기 위해서 class 문법을 사용
+
+## 사용법
+1. this.state라는 변수를 만들고 안에다가 Object 형식으로 state 나열
+2. state를 사용하고 싶으면 this.state.state이름 으로 사용
+3. state를 변경하고 싶으면 this.setState 라는 기본함수를 사용 (소괄호 안에 새로운 state 넣으면 기존 state를 업데이트 해줌)
+
+        class Modal2 extends React.Component {
+        constructor(){
+            super();
+            this.state = {
+            name : 'kim',
+            age : 20
+            }
+        }
+
+        render(){
+            return (
+            <div>안녕 { this.state.name }
+             <button onClick={()=>{ this.setState({age : 21}) }}>버튼</button>
+            </div>
+            )
+        }
+
+        }
+
+## class 컴포넌트에서 props 전송
+1. constructor, super에 props 파라미터 등록
+2. 'this.props.props이름'으로 사용
+
+        class Modal2 extends React.Component {
+        constructor(props){
+            super(props);
+            this.state = {
+            name : 'kim',
+            age : 20
+            }
+        }
+
+        render(){
+            return (
+            <div>안녕 { this.props.프롭스이름 }</div>
+            )
+        }
+
+        }
