@@ -1,0 +1,41 @@
+# React에서 Bootstrap 사용하기
+
+# 설치(1)
+React 프로젝트 경로 내 터미널에서 아래 명령어 입력하여 bootstrap 설치
+        npm install react-bootstrap bootstrap
+
+# 설치(2)
+App.js 파일 내 import 'bootstrap/dist/css/bootstrap.min.css'; 작성하여 bootstrap css 라이브러리 가져오기
+
+# React-bootstrap 사용법
+1. React-Bootstrap 사이트에서 검색해서 예제코드 복붙하여 원하는 css 태그 생성
+    예) <Button variant="primary">Primary></Button>
+
+        import {Button} from 'react-bootstrap'
+
+        function App(){
+        return (
+            <div>
+            <Button variant="primary">Primary</Button>
+            </div>
+        )
+        }
+
+        import {Button, Navbar, Container, Nav} from 'react-bootstrap'
+
+        function App(){
+        return (
+            <div>
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#features">Features</Nav.Link>
+                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                </Nav>
+                </Container>
+            </Navbar>
+            </div>
+        )
+        }
